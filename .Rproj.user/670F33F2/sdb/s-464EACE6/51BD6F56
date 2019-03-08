@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "alt <- NULL\npd <- NULL\n\n.onLoad <- function(libname, pkgname) {\n  alt <<- reticulate::import(\"altair\", delay_load = TRUE)\n  pd <<- reticulate::import(\"pandas\", delay_load = TRUE)\n}\n",
+    "created" : 1552038508309.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3102826260",
+    "id" : "51BD6F56",
+    "lastKnownWriteTime" : 1552038520,
+    "last_content_update" : 1552038520060,
+    "path" : "~/GSoCDemo/R/zzz.R",
+    "project_path" : "R/zzz.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

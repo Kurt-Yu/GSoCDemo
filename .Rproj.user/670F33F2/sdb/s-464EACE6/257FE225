@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(reticulate)\n\ntranslate <- function(g){\n  # Step 1: extract the geom type from ggplot object\n  geom <- sapply(g$layers, function(x) class(x$geom)[1])\n\n  # Step 2: extract the actual data from ggplot object\n  d <- ggplot_build(g)$data\n\n  # Step 3: using altair methods to convert ggplot object to vega-lite spec\n  df <- pd$DataFrame$to_dict(r_to_py(d)[0])\n  chart <- NULL\n  if (geom == \"GeomPoint\"){\n    chart <- alt$Chart(df)$mark_point()\n  } else if (geom == \"GeomBar\"){\n    chart <- alt$Chart(df)$mark_bar()\n  }\n\n  chart <- chart$encode(\n    x='x1:Q',\n    y='y1:Q',\n    color='Origin:N'\n  )$configure_view(\n    height=300,\n    width=400\n  )\n\n  return(chart$to_json(indent=2))\n}\n",
+    "created" : 1551744389217.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1079484921",
+    "id" : "257FE225",
+    "lastKnownWriteTime" : 1552038491,
+    "last_content_update" : 1552038491201,
+    "path" : "~/GSoCDemo/R/main.R",
+    "project_path" : "R/main.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

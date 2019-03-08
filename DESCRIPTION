@@ -1,0 +1,10 @@
+Package: GSoCDemo
+Type: Package
+Title: Vega-Lite Generator
+Version: 0.1.0
+Author: Kurt
+Maintainer: Kurt <z5212108@ad.unsw.edu.au>
+Description: Contains one function for translating a ggplot object into a Vega-Lite specification.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true

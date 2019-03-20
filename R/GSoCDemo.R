@@ -6,5 +6,5 @@
 #'
 #' @author Yu Xia (Kurt) \email{z5212108@ad.unsw.edu.au}
 #'
-#' @name gsoc_demo
+#' @name GSoCDemo
 NULL

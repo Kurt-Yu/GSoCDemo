@@ -1,6 +1,5 @@
 .Rproj.user
-.Rproj
 .Rhistory
-.Rapp.history
 .RData
-.Ruserdata
+.Rproj
+/.vscode
